@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var Metascraper = require('metascraper');
+var cors = require('cors');
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -10,6 +11,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
 app.use(bodyParser.json());
+
+// enable cors
+app.use(cors());
 
 app.get('/', function(request, response) {
   response.end('Metadata scraper');
