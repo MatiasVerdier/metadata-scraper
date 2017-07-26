@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "description": "Api for get website metadata from the url",
   "engines": {
-    "node": "6.10.2"
+    "node": "6"
   },
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
@@ -19,11 +20,6 @@
     "type": "git",
     "url": "https://github.com/MatiasVerdier/metadata-scraper"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^1.11.0"
